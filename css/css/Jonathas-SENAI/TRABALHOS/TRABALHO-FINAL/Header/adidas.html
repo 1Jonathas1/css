@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas Store</title>
+    <link rel="stylesheet" href="adidas.css">
+</head>
+<body>
+    <div class="promo-bar1">FRETE GRÁTIS PARA MEMBROS</div>
+    <header>
+        <div class="logo">
+            <a href="adidas.html">/// ADIDAS</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="tenis.html">Tênis</a></li>
+                <li><a href="roupas.html">Roupas</a></li>
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <li><a href="ofertas.html" style="color: #ff0000;">Ofertas</a></li>
+                <li>
+                    <a href="#" id="cart-btn" href="adidas.css">
+                        🛒 Carrinho <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-color: black; color:white ;">
+            <h1>Impossible is Nothing</h1>
+            <p>Encontre os melhores produtos adidas.</p>
+            <div class="barra">
+                <input type="text" class="search" placeholder="Buscar produtos, tênis, roupas...">
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Produtos em Destaque</h2>
+            <div class="grid">
+
+                <div class="product-card" data-name="Adidas Samba xlg" data-price="599.90" data-type="Tênis Casual">
+                    <img class="product-img" src="img/sapato1.webp" alt="Adidas Samba xlg">
+                    <div class="product-name">Adidas Samba xlg</div>
+                    <div class="product-category">Tênis Casual</div>
+                    <div class="product-price">R$ 599,90</div>
+                    <div class="botoes-card">
+                        <button class="btn-add">Adicionar</button>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-name="Adidas Galaxy" data-price="699.90" data-type="Tênis Esportivo">
+                    <img class="product-img" src="img/sapato2.webp" alt="Adidas Galaxy">
+                    <div class="product-name">Adidas Galaxy</div>
+                    <div class="product-category">Tênis Esportivo</div>
+                    <div class="product-price">R$ 699,90</div>
+                    <div class="botoes-card">
+                        <button class="btn-add">Adicionar</button>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-name="Camiseta Adidas Adicolor" data-price="149.90" data-type="Camiseta Casual">
+                    <img class="product-img" src="img/camisa3.webp" alt="Camiseta Adidas Adicolor">
+                    <div class="product-name">Camiseta Adidas Adicolor</div>
+                    <div class="product-category">Camiseta Casual</div>
+                    <div class="product-price">R$ 149,90</div>
+                    <div class="botoes-card">
+                        <button class="btn-add">Adicionar</button>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <!-- Adicione os outros produtos aqui no mesmo formato -->
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Painel do Carrinho -->
+    <div id="cart-panel">
+        <div class="cart-header">
+            <h2>Carrinho</h2>
+            <button id="close-cart">×</button>
+        </div>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <button id="go-checkout">Finalizar Compra</button>
+        <button id="clear-cart">Limpar Carrinho</button>
+    </div>
+    <button id="btn-topo" type="button" aria-label="Voltar ao topo" title="Voltar ao topo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5"></path>
+            <path d="M5 12l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <footer>
+        <p>© 2026 adidas Store - Projeto escolar</p>
+    </footer>
+
+    
+
+    <script src="adidas.js"></script>
+</body>
+</html>
